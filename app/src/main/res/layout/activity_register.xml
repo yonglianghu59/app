@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgWhite"
+    android:fillViewport="true">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical" android:paddingHorizontal="24dp" android:paddingTop="48dp" android:paddingBottom="32dp">
+
+        <ImageView android:layout_width="60dp" android:layout_height="60dp" android:id="@+id/iv_avatar_preview" android:background="@drawable/bg_search_bar" android:padding="8dp" android:src="@drawable/ic_avatar_default" android:clickable="true" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="点击设置头像" android:textColor="@color/colorPrimary" android:textSize="@dimen/text_12sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="创建账号" android:textColor="@color/textPrimary" android:textSize="@dimen/text_24sp" android:textStyle="bold" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="注册后享受更多优惠和便捷服务" android:textColor="@color/textHint" android:textSize="@dimen/text_13sp" />
+
+        <EditText android:id="@+id/et_nickname" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="20dp" android:background="@drawable/bg_search_bar" android:hint="昵称" android:paddingHorizontal="14dp" android:textColor="@color/textPrimary" android:textSize="@dimen/text_15sp" />
+
+        <EditText android:id="@+id/et_phone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="12dp" android:background="@drawable/bg_search_bar" android:hint="手机号" android:inputType="phone" android:paddingHorizontal="14dp" android:textColor="@color/textPrimary" android:textSize="@dimen/text_15sp" />
+
+        <EditText android:id="@+id/et_password" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="12dp" android:background="@drawable/bg_search_bar" android:hint="设置密码（6-16位）" android:inputType="textPassword" android:paddingHorizontal="14dp" android:textColor="@color/textPrimary" android:textSize="@dimen/text_15sp" />
+
+        <EditText android:id="@+id/et_confirm_password" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="12dp" android:background="@drawable/bg_search_bar" android:hint="确认密码" android:inputType="textPassword" android:paddingHorizontal="14dp" android:textColor="@color/textPrimary" android:textSize="@dimen/text_15sp" />
+
+        <TextView android:id="@+id/btn_register" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="24dp" android:background="@drawable/selector_orange_button" android:gravity="center" android:text="注 册" android:textColor="@color/textWhite" android:textSize="@dimen/text_16sp" android:textStyle="bold" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="密码8888即可快速注册体验" android:textColor="@color/textHint" android:textSize="@dimen/text_12sp" />
+
+        <TextView android:id="@+id/tv_go_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="8dp" android:text="已有账号？立即登录 →" android:textColor="@color/colorPrimary" android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+</ScrollView>

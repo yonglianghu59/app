@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgMain"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="12dp">
+
+        <!-- ========== 顶部用户信息栏 ========== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="32dp"
+            android:paddingBottom="24dp">
+
+            <!-- 消息和设置图标 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_message"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_message" />
+
+                <ImageView
+                    android:id="@+id/iv_settings_top"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_profile_settings"
+                    android:tint="@color/textWhite" />
+            </LinearLayout>
+
+            <!-- 头像 + 昵称 + 手机号 -->
+            <LinearLayout
+                android:id="@+id/layout_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bg_white_card"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_avatar_default" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profile_nickname"
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/text_20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_phone_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="138****5678"
+                        android:textColor="@color/white_70_transparent"
+                        android:textSize="@dimen/text_13sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:tint="@color/white_70_transparent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ========== 快捷入口 1：订单相关（6宫格）========== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="-8dp"
+            android:background="@drawable/bg_white_card"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- 第 1 行 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_payment"
+                    style="@style/ProfileActionEntry"
+                    android:tag="待付款">
+                    <ImageView style="@style/ProfileActionIcon" android:src="@drawable/ic_profile_payment" />
+                    <TextView style="@style/ProfileActionLabel" android:text="@string/profile_pending_pay" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_delivery"
+                    style="@style/ProfileActionEntry"
+                    android:tag="待收货">
+                    <ImageView style="@style/ProfileActionIcon" android:src="@drawable/ic_profile_delivery" />
+                    <TextView style="@style/ProfileActionLabel" android:text="@string/profile_pending_delivery" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_review"
+                    style="@style/ProfileActionEntry"
+                    android:tag="待评价">
+                    <ImageView style="@style/ProfileActionIcon" android:src="@drawable/ic_profile_review" />
+                    <TextView style="@style/ProfileActionLabel" android:text="@string/profile_pending_review" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 第 2 行 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_refund"
+                    style="@style/ProfileActionEntry"
+                    android:tag="退款">
+                    <ImageView style="@style/ProfileActionIcon" android:src="@drawable/ic_profile_refund" />
+                    <TextView style="@style/ProfileActionLabel" android:text="@string/profile_refund" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_aftersale"
+                    style="@style/ProfileActionEntry"
+                    android:tag="售后">
+                    <ImageView style="@style/ProfileActionIcon" android:src="@drawable/ic_profile_aftersale" />
+                    <TextView style="@style/ProfileActionLabel" android:text="@string/profile_aftersale" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_orders"
+                    style="@style/ProfileActionEntry"
+                    android:tag="全部订单">
+                    <ImageView style="@style/ProfileActionIcon" android:src="@drawable/ic_profile_orders" />
+                    <TextView style="@style/ProfileActionLabel" android:text="@string/profile_all_orders" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ========== 快捷入口 2：个人服务 ========== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_white_card"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- 第 1 行 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_address"
+                    style="@style/ProfileActionEntry"
+                    android:tag="我的地址">
+                    <ImageView style="@style/ProfileActionIcon" android:src="@drawable/ic_profile_address" />
+                    <TextView style="@style/ProfileActionLabel" android:text="@string/profile_my_address" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_coupon"
+                    style="@style/ProfileActionEntry"
+                    android:tag="优惠券">
+                    <ImageView style="@style/ProfileActionIcon" android:src="@drawable/ic_profile_coupon" />
+                    <TextView style="@style/ProfileActionLabel" android:text="@string/profile_my_coupon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_favorite"
+                    style="@style/ProfileActionEntry"
+                    android:tag="收藏">
+                    <ImageView style="@style/ProfileActionIcon" android:src="@drawable/ic_profile_favorite" />
+                    <TextView style="@style/ProfileActionLabel" android:text="@string/profile_my_favorite" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 第 2 行 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_service"
+                    style="@style/ProfileActionEntry"
+                    android:tag="客服">
+                    <ImageView style="@style/ProfileActionIcon" android:src="@drawable/ic_profile_service" />
+                    <TextView style="@style/ProfileActionLabel" android:text="@string/profile_contact_service" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_settings"
+                    style="@style/ProfileActionEntry"
+                    android:tag="设置">
+                    <ImageView style="@style/ProfileActionIcon" android:src="@drawable/ic_profile_settings" />
+                    <TextView style="@style/ProfileActionLabel" android:text="@string/profile_settings" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_help"
+                    style="@style/ProfileActionEntry"
+                    android:tag="帮助">
+                    <ImageView style="@style/ProfileActionIcon" android:src="@drawable/ic_profile_help" />
+                    <TextView style="@style/ProfileActionLabel" android:text="@string/profile_help_center" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

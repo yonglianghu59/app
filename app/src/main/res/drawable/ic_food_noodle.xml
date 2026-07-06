@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 面食图标 - 黄色面碗 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="#FF9800" android:pathData="M10,28 C10,20 18,16 24,16 C30,16 38,20 38,28 L37,36 L11,36 Z"/>
+    <path android:fillColor="#00000000" android:strokeColor="#FFE082" android:strokeWidth="1.5" android:pathData="M14,24 Q18,22 22,24" android:strokeLineCap="round"/>
+    <path android:fillColor="#00000000" android:strokeColor="#FFE082" android:strokeWidth="1.5" android:pathData="M18,26 Q22,24 26,26" android:strokeLineCap="round"/>
+    <path android:fillColor="#00000000" android:strokeColor="#FFE082" android:strokeWidth="1.5" android:pathData="M22,22 Q26,20 30,22" android:strokeLineCap="round"/>
+    <path android:fillColor="#FFE082" android:pathData="M18,30 L30,30 L30,32 L18,32 Z"/>
+</vector>

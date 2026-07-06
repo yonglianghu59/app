@@ -1,0 +1,23 @@
+{
+  "id": 101,
+  "shop_id": 1,
+  "category_id": 1,
+  "name": "招牌麻辣烫",
+  "image_url": "https://via.placeholder.com/400x300/FF6600/FFFFFF?text=MaLaTang",
+  "price": 28.0,
+  "monthly_sales": 1523,
+  "description": "精选牛骨汤底，搭配二十余种新鲜蔬菜与优质肉类，麻辣鲜香，回味无穷。每一碗麻辣烫都经过精心调配，汤底熬制4小时以上，确保浓郁鲜香。",
+  "taste": "麻辣鲜香",
+  "ingredients": "牛骨汤、牛肉、豆腐皮、藕片、金针菇、土豆片、海带结、鹌鹑蛋、午餐肉、粉丝",
+  "sizes": [
+    {"name": "小份", "price_offset": 0},
+    {"name": "中份", "price_offset": 5},
+    {"name": "大份", "price_offset": 10}
+  ],
+  "spicy_levels": [
+    {"name": "不辣", "price_offset": 0},
+    {"name": "微辣", "price_offset": 0},
+    {"name": "中辣", "price_offset": 0},
+    {"name": "特辣", "price_offset": 0}
+  ]
+}

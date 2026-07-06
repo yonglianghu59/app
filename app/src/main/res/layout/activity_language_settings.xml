@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgMain"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/search_bar_height" android:background="@color/bgWhite" android:gravity="center_vertical" android:paddingHorizontal="16dp">
+        <ImageView android:id="@+id/iv_back" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_arrow_back" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_weight="1" android:text="语言设置" android:textColor="@color/textPrimary" android:textSize="@dimen/text_18sp" android:textStyle="bold" />
+    </LinearLayout>
+
+    <RadioGroup android:id="@+id/rg_language" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@color/bgWhite" android:padding="8dp">
+        <RadioButton android:id="@+id/rb_chinese" android:layout_width="match_parent" android:layout_height="48dp" android:checked="true" android:text="简体中文" android:textSize="@dimen/text_15sp" android:paddingHorizontal="12dp" android:gravity="center_vertical" />
+        <View style="@style/DividerLine" />
+        <RadioButton android:id="@+id/rb_english" android:layout_width="match_parent" android:layout_height="48dp" android:text="English" android:textSize="@dimen/text_15sp" android:paddingHorizontal="12dp" android:gravity="center_vertical" />
+    </RadioGroup>
+
+    <TextView android:id="@+id/btn_confirm_language" android:layout_width="match_parent" android:layout_height="@dimen/button_height" android:layout_margin="16dp" android:background="@drawable/selector_orange_button" android:gravity="center" android:text="确认切换" android:textColor="@color/textWhite" android:textSize="@dimen/text_16sp" android:textStyle="bold" />
+</LinearLayout>

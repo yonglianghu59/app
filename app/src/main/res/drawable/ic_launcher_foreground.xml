@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 外卖袋身体（白色填充） -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="nonZero"
+        android:pathData="M29,44 L29,80 C29,82.2 30.8,84 33,84 L75,84 C77.2,84 79,82.2 79,80 L79,44 Z" />
+
+    <!-- 外卖袋顶部折叠线 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#E6E6E6"
+        android:strokeWidth="1.2"
+        android:pathData="M32,48 L76,48" />
+
+    <!-- 外卖袋提手（白色描边） -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M36,44 C36,30 38,26 54,26 C70,26 72,30 72,44" />
+
+    <!-- 外卖袋中央图标 - 筷子+碗 组合（橙色） -->
+    <!-- 碗体 -->
+    <path
+        android:fillColor="#FF6600"
+        android:pathData="M44,66 C44,60 50,56 54,56 C58,56 64,60 64,66 L63,73 L45,73 Z" />
+
+    <!-- 碗内热气/蒸汽线 1 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF6600"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M48,53 C48,49 46,47 47,43" />
+
+    <!-- 碗内热气/蒸汽线 2 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF6600"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,53 C54,47 55,45 54,41" />
+
+    <!-- 碗内热气/蒸汽线 3 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF6600"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M60,53 C60,49 61,47 60,43" />
+
+    <!-- 筷子 1 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF6600"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:pathData="M41,52 L43,72" />
+
+    <!-- 筷子 2 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF6600"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:pathData="M61,52 L59,72" />
+
+</vector>

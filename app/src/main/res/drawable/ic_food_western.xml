@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 西餐图标 - 蓝色汉堡 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="#FFAA00" android:pathData="M10,22 L38,22 C38,22 38,24 24,24 C10,24 10,22 10,22 Z"/>
+    <path android:fillColor="#8D6E63" android:pathData="M12,24 L36,24 L36,28 C36,28 30,30 24,30 C18,30 12,28 12,28 Z"/>
+    <path android:fillColor="#FFAA00" android:pathData="M10,20 L38,20 C38,20 38,22 24,22 C10,22 10,20 10,20 Z"/>
+    <path android:fillColor="#2196F3" android:pathData="M14,20 L34,20 L34,19 C34,17 30,16 24,16 C18,16 14,17 14,19 Z"/>
+</vector>

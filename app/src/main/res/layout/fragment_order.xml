@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgMain"
+    android:orientation="vertical">
+
+    <!-- 顶部标题栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/my_orders"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 标签切换栏 -->
+    <LinearLayout
+        android:id="@+id/layout_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bgWhite"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/tab_all"
+            style="@style/OrderTab"
+            android:text="@string/tab_all" />
+
+        <TextView
+            android:id="@+id/tab_pending_pay"
+            style="@style/OrderTab"
+            android:text="@string/tab_pending_pay" />
+
+        <TextView
+            android:id="@+id/tab_pending_delivery"
+            style="@style/OrderTab"
+            android:text="@string/tab_pending_delivery" />
+
+        <TextView
+            android:id="@+id/tab_pending_review"
+            style="@style/OrderTab"
+            android:text="@string/tab_pending_review" />
+    </LinearLayout>
+
+    <!-- 标签下划线指示器容器 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/bgDivider">
+
+        <View
+            android:id="@+id/view_tab_indicator"
+            android:layout_width="40dp"
+            android:layout_height="3dp"
+            android:background="@drawable/bg_tab_indicator" />
+    </FrameLayout>
+
+    <!-- 订单列表 -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="8dp" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- 空状态 -->
+    <LinearLayout
+        android:id="@+id/layout_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:alpha="0.3"
+            android:src="@drawable/ic_empty_order" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/no_orders"
+            android:textColor="@color/textHint"
+            android:textSize="@dimen/text_16sp" />
+    </LinearLayout>
+
+</LinearLayout>

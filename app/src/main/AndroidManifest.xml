@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".app.FoodOrderApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project_new_takeout"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- 启动页 -->
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Project_new_takeout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 主页面（首页 + 底部导航） -->
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 搜索页 -->
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 店铺详情页 -->
+        <activity
+            android:name=".ui.shop.ShopDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 菜品详情页 -->
+        <activity
+            android:name=".ui.food.FoodDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 确认订单页 -->
+        <activity
+            android:name=".ui.order.OrderConfirmActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 支付页 -->
+        <activity
+            android:name=".ui.pay.PayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 设置页 -->
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 全部分类 -->
+        <activity
+            android:name=".ui.category.AllCategoriesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 评价页 -->
+        <activity
+            android:name=".ui.review.ReviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 地址管理 -->
+        <activity
+            android:name=".ui.address.AddressManageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 优惠券 -->
+        <activity
+            android:name=".ui.coupon.CouponListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 帮助中心 -->
+        <activity
+            android:name=".ui.help.HelpCenterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 消息中心 -->
+        <activity
+            android:name=".ui.message.MessageCenterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的收藏 -->
+        <activity
+            android:name=".ui.favorite.FavoriteListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 客服中心 -->
+        <activity
+            android:name=".ui.service.CustomerServiceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 订单详情 -->
+        <activity
+            android:name=".ui.order.OrderDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 关于我们 -->
+        <activity
+            android:name=".ui.about.AboutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 登录 / 注册 -->
+        <activity android:name=".ui.auth.LoginActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".ui.auth.RegisterActivity" android:exported="false" android:screenOrientation="portrait" />
+
+        <!-- 设置子页面 -->
+        <activity android:name=".ui.settings.NotificationSettingsActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".ui.settings.ChangePhoneActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".ui.settings.ChangePasswordActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".ui.settings.LanguageSettingsActivity" android:exported="false" android:screenOrientation="portrait" />
+
+        <!-- 首次使用引导 -->
+        <activity android:name=".ui.onboarding.OnboardingActivity" android:exported="false" android:screenOrientation="portrait" />
+
+        <!-- AI 美食助手 -->
+        <activity android:name=".ui.ai.AIChatActivity" android:exported="false" android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

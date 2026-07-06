@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "name": "川味小厨",
+  "image_url": "https://via.placeholder.com/400x200/FF6600/FFFFFF?text=ChuanWeiXiaoChu",
+  "score": 4.8,
+  "monthly_sales": 3286,
+  "min_price": 20.0,
+  "delivery_fee": 3.0,
+  "delivery_time": 30,
+  "distance": 1.2,
+  "tags": ["新店", "满减", "辣", "品质"],
+  "latitude": 30.5728,
+  "longitude": 104.0668
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Project_new_takeout" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:colorBackground">#1A1A1A</item>
+        <item name="colorSurface">#2A2A2A</item>
+    </style>
+
+    <style name="Theme.Project_new_takeout" parent="Base.Theme.Project_new_takeout" />
+</resources>

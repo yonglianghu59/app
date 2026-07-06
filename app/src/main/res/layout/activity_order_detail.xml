@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgMain"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_bar_height"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+        <ImageView android:id="@+id/iv_back" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_arrow_back" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_weight="1" android:text="订单详情" android:textColor="@color/textPrimary" android:textSize="@dimen/text_18sp" android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp">
+
+            <!-- 订单状态卡片 -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/corner_medium" app:cardElevation="1dp" app:contentPadding="16dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">
+                    <ImageView android:id="@+id/iv_order_status_icon" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_profile_delivery" />
+                    <TextView android:id="@+id/tv_order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="@color/colorPrimary" android:textSize="@dimen/text_18sp" android:textStyle="bold" />
+                    <TextView android:id="@+id/tv_order_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="@color/textHint" android:textSize="@dimen/text_12sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 收货信息 -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:cardCornerRadius="@dimen/corner_medium" app:cardElevation="1dp" app:contentPadding="14dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收货信息" android:textColor="@color/textPrimary" android:textSize="@dimen/text_15sp" android:textStyle="bold" />
+                    <TextView android:id="@+id/tv_address_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textColor="@color/textSecondary" android:textSize="@dimen/text_13sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 商品清单 -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:cardCornerRadius="@dimen/corner_medium" app:cardElevation="1dp" app:contentPadding="14dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品清单" android:textColor="@color/textPrimary" android:textSize="@dimen/text_15sp" android:textStyle="bold" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_order_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 费用明细 -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:cardCornerRadius="@dimen/corner_medium" app:cardElevation="1dp" app:contentPadding="14dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="费用明细" android:textColor="@color/textPrimary" android:textSize="@dimen/text_15sp" android:textStyle="bold" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:orientation="horizontal">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="商品总价" android:textColor="@color/textSecondary" android:textSize="@dimen/text_13sp" />
+                        <TextView android:id="@+id/tv_goods_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/textPrimary" android:textSize="@dimen/text_13sp" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:orientation="horizontal">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="配送费" android:textColor="@color/textSecondary" android:textSize="@dimen/text_13sp" />
+                        <TextView android:id="@+id/tv_delivery_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/textPrimary" android:textSize="@dimen/text_13sp" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:orientation="horizontal">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="优惠抵扣" android:textColor="@color/textSecondary" android:textSize="@dimen/text_13sp" />
+                        <TextView android:id="@+id/tv_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/tagGreen" android:textSize="@dimen/text_13sp" />
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginVertical="8dp" android:background="@color/bgDivider" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="实付金额" android:textColor="@color/textPrimary" android:textSize="@dimen/text_15sp" android:textStyle="bold" />
+                        <TextView android:id="@+id/tv_actual_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/priceRed" android:textSize="@dimen/text_18sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 底部按钮 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="24dp" android:orientation="horizontal">
+                <TextView android:id="@+id/btn_reorder" android:layout_width="0dp" android:layout_height="@dimen/button_height" android:layout_marginEnd="8dp" android:layout_weight="1" android:background="@drawable/selector_option_chip" android:gravity="center" android:text="再来一单" android:textColor="@color/textSecondary" android:textSize="@dimen/text_15sp" />
+                <TextView android:id="@+id/btn_review" android:layout_width="0dp" android:layout_height="@dimen/button_height" android:layout_weight="1" android:background="@drawable/selector_orange_button" android:gravity="center" android:text="去评价" android:textColor="@color/textWhite" android:textSize="@dimen/text_15sp" android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgMain"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_bar_height"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="发表评价"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/corner_medium"
+                app:cardElevation="1dp"
+                app:contentPadding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评分"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_16sp"
+                        android:textStyle="bold" />
+
+                    <!-- 评价对象标题 -->
+                    <TextView
+                        android:id="@+id/tv_review_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="评价商家"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_16sp"
+                        android:textStyle="bold" />
+
+                    <!-- 星级评分 -->
+                    <LinearLayout
+                        android:id="@+id/layout_stars"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="评价内容"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="@dimen/text_16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_review_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_search_bar"
+                        android:gravity="top"
+                        android:hint="分享您的用餐体验..."
+                        android:padding="12dp"
+                        android:textColor="@color/textPrimary"
+                        android:textColorHint="@color/textHint"
+                        android:textSize="@dimen/text_14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/btn_submit_review"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/selector_orange_button"
+                android:gravity="center"
+                android:text="提交评价"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 日料图标 - 绿色寿司 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="#4CAF50" android:pathData="M12,28 L36,28 C36,28 34,20 24,18 C14,20 12,28 12,28 Z"/>
+    <path android:fillColor="#FF6600" android:pathData="M16,26 L32,26 C32,24 28,22 24,22 C20,22 16,24 16,26 Z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M20,24 L28,24 C28,23 26,22.5 24,22.5 C22,22.5 20,23 20,24 Z"/>
+</vector>

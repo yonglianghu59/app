@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基础色 -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 品牌主色调 - 橙色系 (对标美团/饿了么) -->
+    <color name="colorPrimary">#FF6600</color>
+    <color name="colorPrimaryDark">#E55A00</color>
+    <color name="colorPrimaryLight">#FF8533</color>
+    <color name="colorAccent">#FF6600</color>
+
+    <!-- 背景色 -->
+    <color name="bgMain">#F5F5F5</color>
+    <color name="bgWhite">#FFFFFF</color>
+    <color name="bgCard">#FFFFFF</color>
+    <color name="bgDivider">#EEEEEE</color>
+
+    <!-- 文字色 -->
+    <color name="textPrimary">#333333</color>
+    <color name="textSecondary">#666666</color>
+    <color name="textHint">#999999</color>
+    <color name="textWhite">#FFFFFF</color>
+    <color name="textOrange">#FF6600</color>
+
+    <!-- 价格色 -->
+    <color name="priceRed">#FF4444</color>
+    <color name="priceOrange">#FF6600</color>
+
+    <!-- 评分/标签色 -->
+    <color name="starYellow">#FFAA00</color>
+    <color name="tagGreen">#4CAF50</color>
+    <color name="tagBlue">#2196F3</color>
+    <color name="tagRed">#FF5252</color>
+
+    <!-- 按钮色 -->
+    <color name="btnOrange">#FF6600</color>
+    <color name="btnOrangePressed">#E55A00</color>
+    <color name="btnDisable">#CCCCCC</color>
+
+    <!-- 底部导航 -->
+    <color name="bottomNavNormal">#999999</color>
+    <color name="bottomNavSelected">#FF6600</color>
+
+    <!-- 购物车 -->
+    <color name="cartBadge">#FF4444</color>
+
+    <!-- 状态页 -->
+    <color name="loadingText">#999999</color>
+    <color name="emptyIcon">#CCCCCC</color>
+
+    <!-- 半透明 -->
+    <color name="white_70_transparent">#B3FFFFFF</color>
+
+    <!-- 订单状态色 -->
+    <color name="statusCompleted">#4CAF50</color>
+    <color name="statusPending">#FF6600</color>
+    <color name="statusCancelled">#999999</color>
+    <color name="statusDelivering">#2196F3</color>
+
+    <!-- 数量控件 -->
+    <color name="qtyBtnBg">#F0F0F0</color>
+</resources>

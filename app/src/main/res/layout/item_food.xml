@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgWhite"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!-- 左侧菜品图片 -->
+    <ImageView
+        android:id="@+id/iv_food_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_orange_button" />
+
+    <!-- 中间文字区 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_15sp" />
+
+        <TextView
+            android:id="@+id/tv_monthly_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/textHint"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/priceRed"
+            android:textSize="@dimen/text_16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 右侧加号按钮 -->
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="bottom"
+        android:padding="2dp"
+        android:src="@drawable/ic_add_circle" />
+
+</LinearLayout>

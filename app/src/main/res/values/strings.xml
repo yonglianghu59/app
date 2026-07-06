@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">网上订餐</string>
+
+    <!-- 底部导航 -->
+    <string name="tab_home">首页</string>
+    <string name="tab_order">订单</string>
+    <string name="tab_cart">购物车</string>
+    <string name="tab_profile">我的</string>
+
+    <!-- 首页 -->
+    <string name="search_hint">搜索餐厅</string>
+    <string name="banner_title_weekend">周末特惠</string>
+    <string name="banner_subtitle">周末美食狂欢</string>
+    <string name="banner_desc">精选美味 5 折起</string>
+    <string name="banner_button">立即抢购</string>
+    <string name="category_food">美食</string>
+    <string name="category_drink">饮品甜点</string>
+    <string name="category_market">超市便利</string>
+    <string name="category_flower">鲜花绿植</string>
+    <string name="category_medicine">买药</string>
+    <string name="category_more">全部分类</string>
+
+    <!-- 店铺卡片 -->
+    <string name="shop_score">评分</string>
+    <string name="shop_monthly_sales">月销量</string>
+    <string name="shop_min_price">起送价</string>
+    <string name="shop_delivery_fee">配送费</string>
+    <string name="shop_delivery_time">分钟</string>
+    <string name="shop_distance">km</string>
+
+    <!-- 店铺详情 -->
+    <string name="tab_hot_sale">热销</string>
+    <string name="tab_combo">套餐</string>
+    <string name="tab_staple">主食</string>
+    <string name="tab_snack">小吃</string>
+    <string name="tab_drink">饮料</string>
+    <string name="go_settle">去结算</string>
+    <string name="cart_empty">购物车为空</string>
+
+    <!-- 菜品详情 -->
+    <string name="food_intro">菜品介绍</string>
+    <string name="size_small">小份</string>
+    <string name="size_medium">中份</string>
+    <string name="size_large">大份</string>
+    <string name="spicy_none">不辣</string>
+    <string name="spicy_mild">微辣</string>
+    <string name="spicy_medium">中辣</string>
+    <string name="spicy_hot">特辣</string>
+    <string name="add_to_cart">加入购物车</string>
+    <string name="add_success">已加入购物车</string>
+    <string name="ai_recipe">AI 生方</string>
+
+    <!-- 确认订单 -->
+    <string name="confirm_order">确认订单</string>
+    <string name="delivery_address">收货地址</string>
+    <string name="switch_address">切换地址</string>
+    <string name="contact">联系人</string>
+    <string name="phone_hidden">手机号</string>
+    <string name="store_info">商户信息</string>
+    <string name="goods_list">商品清单</string>
+    <string name="fee_detail">费用明细</string>
+    <string name="goods_total">商品总价</string>
+    <string name="delivery_fee_label">配送费</string>
+    <string name="discount_label">优惠抵扣</string>
+    <string name="actual_pay">实付金额</string>
+    <string name="service_guarantee">安心送服务保障</string>
+    <string name="go_pay">去支付</string>
+
+    <!-- 支付页 -->
+    <string name="order_pay">订单支付</string>
+    <string name="pay_amount">待支付金额</string>
+    <string name="order_number">订单编号</string>
+    <string name="pay_qr_hint">微信/支付宝扫码支付</string>
+    <string name="wechat_pay">微信支付</string>
+    <string name="alipay">支付宝支付</string>
+    <string name="recommend">推荐</string>
+    <string name="time_remaining">支付剩余时间</string>
+    <string name="timeout_hint">15分钟内未支付，订单将自动取消</string>
+    <string name="back_shop">返回商家</string>
+    <string name="confirm_pay">确认支付</string>
+    <string name="pay_success">支付成功</string>
+    <string name="order_cancelled">订单已取消</string>
+
+    <!-- 我的订单 -->
+    <string name="my_orders">我的订单</string>
+    <string name="tab_all">全部</string>
+    <string name="tab_pending_pay">待付款</string>
+    <string name="tab_pending_delivery">待收货</string>
+    <string name="tab_pending_review">待评价</string>
+    <string name="order_status_pending">待付款</string>
+    <string name="order_status_paid">已支付</string>
+    <string name="order_status_delivering">配送中</string>
+    <string name="order_status_completed">已完成</string>
+    <string name="order_status_cancelled">已取消</string>
+    <string name="btn_review">评价</string>
+    <string name="btn_reorder">再来一单</string>
+    <string name="order_summary_format">%1$s等 %2$d 件</string>
+    <string name="no_orders">暂无订单</string>
+
+    <!-- 购物车 -->
+    <string name="cart_title">购物车</string>
+    <string name="cart_clear">清空</string>
+    <string name="cart_clear_confirm">确认清空购物车？</string>
+    <string name="cart_free_delivery_hint">配送费满 ¥20 免配送费</string>
+    <string name="cart_recommend">为你推荐</string>
+    <string name="cart_select_all">全选</string>
+    <string name="cart_go_settle">去结算</string>
+    <string name="cart_go_shop">去逛逛</string>
+    <string name="cart_empty_hint">购物车还是空的，去逛逛吧</string>
+    <string name="cart_delete_confirm">确认删除该商品？</string>
+
+    <!-- 个人中心 -->
+    <string name="profile_title">我的</string>
+    <string name="profile_nickname">美食家</string>
+    <string name="profile_pending_pay">待付款</string>
+    <string name="profile_pending_delivery">待收货</string>
+    <string name="profile_pending_review">待评价</string>
+    <string name="profile_refund">退款</string>
+    <string name="profile_aftersale">售后</string>
+    <string name="profile_all_orders">全部订单</string>
+    <string name="profile_my_address">我的地址</string>
+    <string name="profile_my_coupon">我的优惠券</string>
+    <string name="profile_my_favorite">我的收藏</string>
+    <string name="profile_contact_service">联系客服</string>
+    <string name="profile_settings">设置</string>
+    <string name="profile_help_center">帮助中心</string>
+
+    <!-- 首页 -->
+    <string name="sort_default">综合排序</string>
+    <string name="sort_distance">距离最近</string>
+    <string name="sort_score">评分最高</string>
+    <string name="sort_sales">销量优先</string>
+    <string name="filter_category">分类: %1$s</string>
+    <string name="clear_filter">清除筛选</string>
+
+    <!-- 通用 -->
+    <string name="loading">加载中…</string>
+    <string name="load_failed">加载失败，点击重试</string>
+    <string name="no_data">暂无数据</string>
+    <string name="network_error">网络连接异常</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="clear_cart">清空购物车</string>
+    <string name="cart_total">合计</string>
+    <string name="yuan">¥</string>
+</resources>

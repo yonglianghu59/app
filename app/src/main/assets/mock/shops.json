@@ -1,0 +1,14 @@
+[
+  {"id":1,"name":"川味居·麻辣烫","score":4.8,"monthly_sales":3286,"min_price":20.0,"delivery_fee":3.0,"delivery_time":30,"distance":1.2,"tags":["新店","满减","辣"],"latitude":30.5728,"longitude":104.0668},
+  {"id":2,"name":"麦乐送·汉堡炸鸡","score":4.6,"monthly_sales":5612,"min_price":15.0,"delivery_fee":2.0,"delivery_time":25,"distance":0.8,"tags":["快送","满减","首单立减"],"latitude":30.5740,"longitude":104.0680},
+  {"id":3,"name":"鱼鲜生·日料寿司","score":4.9,"monthly_sales":2105,"min_price":30.0,"delivery_fee":5.0,"delivery_time":40,"distance":2.5,"tags":["品质","满减","红包"],"latitude":30.5710,"longitude":104.0650},
+  {"id":4,"name":"湘味轩·经典湘菜","score":4.7,"monthly_sales":4432,"min_price":25.0,"delivery_fee":4.0,"delivery_time":35,"distance":1.5,"tags":["地道","满减","新品"],"latitude":30.5735,"longitude":104.0675},
+  {"id":5,"name":"甜蜜蜜·奶茶烘焙","score":4.5,"monthly_sales":7823,"min_price":10.0,"delivery_fee":2.0,"delivery_time":20,"distance":0.5,"tags":["人气","满减","下午茶"],"latitude":30.5720,"longitude":104.0690},
+  {"id":6,"name":"粤港茶餐厅","score":4.4,"monthly_sales":1650,"min_price":35.0,"delivery_fee":4.0,"delivery_time":45,"distance":3.0,"tags":["品质","满减"],"latitude":30.5700,"longitude":104.0620},
+  {"id":7,"name":"兰州牛大碗·拉面","score":4.6,"monthly_sales":3890,"min_price":12.0,"delivery_fee":2.0,"delivery_time":25,"distance":1.0,"tags":["地道","快送","人气"],"latitude":30.5750,"longitude":104.0700},
+  {"id":8,"name":"首尔炸鸡·韩式料理","score":4.7,"monthly_sales":5120,"min_price":25.0,"delivery_fee":3.0,"delivery_time":35,"distance":1.8,"tags":["新品","满减","人气"],"latitude":30.5715,"longitude":104.0630},
+  {"id":9,"name":"罗马假日·披萨意面","score":4.5,"monthly_sales":2340,"min_price":30.0,"delivery_fee":5.0,"delivery_time":40,"distance":2.2,"tags":["品质","慢送"],"latitude":30.5690,"longitude":104.0710},
+  {"id":10,"name":"深夜食堂·烧烤","score":4.3,"monthly_sales":6780,"min_price":20.0,"delivery_fee":3.0,"delivery_time":30,"distance":1.3,"tags":["夜宵","人气","辣"],"latitude":30.5730,"longitude":104.0640},
+  {"id":11,"name":"绿野仙踪·轻食沙拉","score":4.8,"monthly_sales":1980,"min_price":25.0,"delivery_fee":4.0,"delivery_time":20,"distance":1.6,"tags":["健康","新品","品质"],"latitude":30.5705,"longitude":104.0695},
+  {"id":12,"name":"蜀九香·火锅外送","score":4.9,"monthly_sales":4320,"min_price":50.0,"delivery_fee":0.0,"delivery_time":50,"distance":3.5,"tags":["品质","满减","辣","人气"],"latitude":30.5680,"longitude":104.0600}
+]

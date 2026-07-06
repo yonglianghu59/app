@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgMain"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/search_bar_height" android:background="@color/bgWhite" android:gravity="center_vertical" android:paddingHorizontal="16dp">
+        <ImageView android:id="@+id/iv_back" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_arrow_back" />
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_weight="1" android:text="推送通知设置" android:textColor="@color/textPrimary" android:textSize="@dimen/text_18sp" android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@color/bgWhite" android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="52dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单状态通知" android:textColor="@color/textPrimary" android:textSize="@dimen/text_15sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单状态变更时推送通知" android:textColor="@color/textHint" android:textSize="@dimen/text_11sp" />
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/switch_order" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+        </LinearLayout>
+        <View style="@style/DividerLine" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="52dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠活动通知" android:textColor="@color/textPrimary" android:textSize="@dimen/text_15sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="接收优惠活动和促销信息" android:textColor="@color/textHint" android:textSize="@dimen/text_11sp" />
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/switch_promo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+        </LinearLayout>
+        <View style="@style/DividerLine" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="52dp" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="系统消息" android:textColor="@color/textPrimary" android:textSize="@dimen/text_15sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="系统更新、服务公告等消息" android:textColor="@color/textHint" android:textSize="@dimen/text_11sp" />
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/switch_system" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- ViewPager -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 底部指示器 + 按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- 圆点指示器 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View android:id="@+id/dot_1" android:layout_width="10dp" android:layout_height="10dp" android:layout_margin="4dp" android:background="@drawable/selector_orange_button" />
+            <View android:id="@+id/dot_2" android:layout_width="10dp" android:layout_height="10dp" android:layout_margin="4dp" android:background="@drawable/bg_button_disabled" />
+            <View android:id="@+id/dot_3" android:layout_width="10dp" android:layout_height="10dp" android:layout_margin="4dp" android:background="@drawable/bg_button_disabled" />
+        </LinearLayout>
+
+        <!-- 按钮 -->
+        <TextView
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_orange_button"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/text_16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="8dp"
+            android:text="跳过"
+            android:textColor="@color/textHint"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+</LinearLayout>

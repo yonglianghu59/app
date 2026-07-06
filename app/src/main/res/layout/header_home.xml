@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- ===== 1. 地址栏 ===== -->
+    <LinearLayout
+        android:id="@+id/layout_location"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_profile_address"
+            android:tint="@color/textWhite" />
+
+        <TextView
+            android:id="@+id/tv_location_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="天府大道中段688号"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/text_14sp" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_arrow_right"
+            android:tint="@color/textWhite" />
+    </LinearLayout>
+
+    <!-- ===== 2. 搜索栏 ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_bar_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/layout_search_bar"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search_bar"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:id="@+id/iv_search_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/iv_search_icon"
+                android:layout_marginStart="6dp"
+                android:background="@null"
+                android:hint="@string/search_hint"
+                android:textColorHint="@color/textHint"
+                android:textColor="@color/textPrimary"
+                android:textSize="@dimen/text_14sp"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:inputType="text" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- ===== 3. Banner 轮播 + 指示器 ===== -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height" />
+
+        <!-- 圆点指示器 -->
+        <LinearLayout
+            android:id="@+id/layout_banner_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:gravity="center" />
+    </FrameLayout>
+
+    <!-- ===== 4. 分类入口 ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:paddingBottom="4dp"
+        android:background="@color/bgWhite"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:id="@+id/layout_category_food"
+            style="@style/CategoryEntry"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView style="@style/CategoryIcon" android:src="@drawable/ic_category_food" />
+            <TextView style="@style/CategoryLabel" android:text="@string/category_food" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_category_drink"
+            style="@style/CategoryEntry"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView style="@style/CategoryIcon" android:src="@drawable/ic_category_drink" />
+            <TextView style="@style/CategoryLabel" android:text="@string/category_drink" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_category_market"
+            style="@style/CategoryEntry"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView style="@style/CategoryIcon" android:src="@drawable/ic_category_market" />
+            <TextView style="@style/CategoryLabel" android:text="@string/category_market" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_category_flower"
+            style="@style/CategoryEntry"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView style="@style/CategoryIcon" android:src="@drawable/ic_category_flower" />
+            <TextView style="@style/CategoryLabel" android:text="@string/category_flower" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_category_medicine"
+            style="@style/CategoryEntry"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView style="@style/CategoryIcon" android:src="@drawable/ic_category_medicine" />
+            <TextView style="@style/CategoryLabel" android:text="@string/category_medicine" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_category_more"
+            style="@style/CategoryEntry"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView style="@style/CategoryIcon" android:src="@drawable/ic_category_more" />
+            <TextView style="@style/CategoryLabel" android:text="@string/category_more" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ===== 5. 排序栏 ===== -->
+    <LinearLayout
+        android:id="@+id/layout_sort_bar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/sort_default"
+            style="@style/SortTab"
+            android:text="综合排序" />
+
+        <TextView
+            android:id="@+id/sort_distance"
+            style="@style/SortTab"
+            android:text="距离最近" />
+
+        <TextView
+            android:id="@+id/sort_score"
+            style="@style/SortTab"
+            android:text="评分最高" />
+
+        <TextView
+            android:id="@+id/sort_sales"
+            style="@style/SortTab"
+            android:text="销量优先" />
+    </LinearLayout>
+
+    <!-- 分隔线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bgDivider" />
+
+    <!-- 当前筛选标签 -->
+    <LinearLayout
+        android:id="@+id/layout_filter_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="6dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_filter_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_tag_orange"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/text_11sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_clear_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除筛选"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_12sp"
+            android:padding="4dp" />
+    </LinearLayout>
+
+    <!-- 分隔 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/bgMain" />
+
+</LinearLayout>

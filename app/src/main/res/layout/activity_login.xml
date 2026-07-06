@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgWhite"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="32dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_category_food" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="网上订餐"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_28sp"
+            android:textStyle="bold" />
+
+        <!-- 登录标题 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="登录"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_24sp"
+            android:textStyle="bold" />
+
+        <!-- 邮箱/手机号 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="手机号或邮箱"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_search_bar"
+            android:hint="请输入手机号或邮箱"
+            android:inputType="textEmailAddress|phone"
+            android:paddingHorizontal="14dp"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_15sp" />
+
+        <!-- 密码 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="密码"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_search_bar"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingHorizontal="14dp"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_15sp" />
+
+        <!-- 登录按钮 -->
+        <TextView
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_orange_button"
+            android:gravity="center"
+            android:text="登 录"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/text_16sp"
+            android:textStyle="bold" />
+
+        <!-- 提示信息 -->
+        <TextView
+            android:id="@+id/tv_login_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="首次使用？手机号+密码8888即可快速体验"
+            android:textColor="@color/textHint"
+            android:textSize="@dimen/text_12sp" />
+
+        <!-- 分割线 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/bgDivider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="首次使用网上订餐？"
+                android:textColor="@color/textHint"
+                android:textSize="@dimen/text_12sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/bgDivider" />
+        </LinearLayout>
+
+        <!-- 注册按钮 -->
+        <TextView
+            android:id="@+id/btn_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/selector_option_chip"
+            android:gravity="center"
+            android:text="创建新账号"
+            android:textColor="@color/textSecondary"
+            android:textSize="@dimen/text_15sp" />
+
+        <!-- 跳过登录 -->
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:text="跳过登录，先逛逛 →"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_14sp" />
+
+    </LinearLayout>
+</ScrollView>

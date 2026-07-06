@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgMain"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_bar_height"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="关于我们"
+            android:textColor="@color/textPrimary"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Logo + 名称 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="40dp">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/ic_category_food" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="网上订餐"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_app_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="v1.0.0"
+                    android:textColor="@color/textHint"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+
+            <!-- 应用介绍 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/bg_white_card"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应用信息"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingMultiplier="1.6"
+                    android:text="网上订餐是一款专注于本地美食外卖配送的移动应用，致力于为您提供便捷、快速、优质的外卖订餐服务。\n\n我们与众多优质餐厅合作，涵盖中餐、西餐、日料、饮品甜点等多种品类，满足您的多样化饮食需求。\n\n特色功能：\n• 智能搜索，快速找到心仪美食\n• 实时订单跟踪，配送进度一目了然\n• 新用户专享优惠，订餐更实惠\n• 多种支付方式，安全便捷"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="@dimen/text_13sp" />
+            </LinearLayout>
+
+            <!-- 联系方式 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_white_card"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系我们"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_contact_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="4dp"
+                    android:text="📞 客服热线：400-888-8888（点击拨打）"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_13sp" />
+
+                <TextView
+                    android:id="@+id/tv_contact_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="4dp"
+                    android:text="📧 邮箱：support@foodorder.com（点击发送邮件）"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_13sp" />
+            </LinearLayout>
+
+            <!-- 法律信息 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_white_card"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_privacy_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="隐私政策"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_14sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground" />
+
+                <View style="@style/DividerLine" />
+
+                <TextView
+                    android:id="@+id/tv_terms_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="用户服务协议"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="@dimen/text_14sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground" />
+            </LinearLayout>
+
+            <!-- 版权信息 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="32dp"
+                android:layout_gravity="center"
+                android:text="© 2025 网上订餐 Team"
+                android:textColor="@color/textHint"
+                android:textSize="@dimen/text_11sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

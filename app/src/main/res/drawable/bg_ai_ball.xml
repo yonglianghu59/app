@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AI 悬浮球渐变背景 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <gradient
+        android:startColor="#7C3AED"
+        android:endColor="#4F46E5"
+        android:type="linear"
+        android:angle="135" />
+    <stroke android:width="2dp" android:color="#A78BFA" />
+</shape>
